@@ -3,6 +3,7 @@
 #define CLASS_STRING_H
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
+#include <regex>
 #include <cstring>
 using namespace std;
 
@@ -11,7 +12,7 @@ class MyString
 protected:
 	int Length;
 	char* Str;
-	
+
 public:
 	MyString();
 	MyString(const char* ptr);
@@ -19,6 +20,11 @@ public:
 	MyString& operator += (const MyString& t);
 	const char* getStr() const;
 	int getLength() const;
+	int getSentences() const;
+
+	int getArticles() const;
+
+	int search(string Sub);
 
 	ostream & show(ostream & os) const;
 	friend ostream & operator << (ostream & os, const MyString & s)
