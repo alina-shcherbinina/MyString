@@ -1,4 +1,4 @@
-# string
+# class MyString (задача №9) 
 2nd year 2nd semester programming exam
 - [x] Определить класс «Текстовая строка»
 
