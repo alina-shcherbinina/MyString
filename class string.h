@@ -10,37 +10,40 @@ using namespace std;
 class MyString
 {
 protected:
+
 	int Length;
 	char* Str;
 
 public:
+
 	MyString();
+
 	MyString(const char* ptr);
-	MyString(const MyString& t);
+	MyString(const MyString& t); 
 	
-	MyString& operator += (const MyString& t);
+	MyString& operator += (const MyString& t); //copy and add
 	
-	const char* getStr() const;
+	const char* getStr() const; // mystring into char
 	
-	int getLength() const;
+	int getLength() const; // the length of mystring 
 
-	int getSentences() const;
+	int getSentences() const; // counts parts of mystring that ends with . ? !
 
-	int getArticles() const;
+	int getArticles() const; // counts atricles "the" and "a'
 
-	int search(string Sub);
+	int search(string Sub); // search a substung in a string a.search(substring)
 
-	int breakApart() const;
+	int breakApart() const; // breaks apart mystring into seprate words
 
-	int getWords() const;
+	int getWords() const; // counts words in mystring
 
-	ostream & show(ostream & os) const;
+	ostream & show(ostream & os) const; //out
 	friend ostream & operator << (ostream & os, const MyString & s)
 	{
 		return s.show(os);
 	}
 
-	~MyString();
+	~MyString(); //destructor 
 };
 
 #endif
