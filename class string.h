@@ -1,7 +1,7 @@
 #pragma once
 #ifndef CLASS_STRING_H
 #define CLASS_STRING_H
-#define _CRT_SECURE_NO_WARNINGS
+#define _CRT_SECURE_NO_WARNINGS //strcpy
 #include <iostream>
 #include <regex>
 #include <cstring>
