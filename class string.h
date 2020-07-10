@@ -1,7 +1,7 @@
 #pragma once
 #ifndef CLASS_STRING_H
 #define CLASS_STRING_H
-#define _CRT_SECURE_NO_WARNINGS //strcpy
+#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <regex>
 #include <cstring>
@@ -31,7 +31,7 @@ public:
 
 	int getArticles() const; // counts atricles "the" and "a'
 
-	int search(string Sub); // search a substung in a string a.search(substring)
+	void search(string sub); // search a substung in a string a.search(substring)
 
 	int breakApart() const; // breaks apart mystring into seprate words
 
